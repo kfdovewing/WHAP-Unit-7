@@ -1,12 +1,89 @@
 body{
-    font-family: Courier;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #c4c4c4;
 }
 
 #header{
-    color: blue;
+    color: #074170;
     text-align: center;
 }
-#input{
-    border: 3px solid black;
-    border-radius: 5px;
+/*buttons*/
+#a{
+    background-color: #b9aabf; /* purple */
+    border: hidden;
+    border-radius: 100px;
+    color: black;
+    width: 450px;
+    height: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    font-family:'Courier New', Courier, monospace;
+
+}
+#b{
+    background-color: #a3b3d6; /* blue */
+    border: hidden;
+    border-radius: 100px;
+    color: black;
+    width: 450px;
+    height: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    font-family:'Courier New', Courier, monospace;
+}
+#c{
+    background-color: #b2dbd1; /* teal */
+    border: hidden;
+    border-radius: 100px;
+    color: black;
+    width: 450px;
+    height: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    font-family:'Courier New', Courier, monospace;
+}
+#d{
+    background-color: #f7e8b0; /* yellow */
+    border: hidden;
+    border-radius: 100px;
+    color: black;
+    width: 450px;
+    height: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    font-family:'Courier New', Courier, monospace;
+}
+.buttonsab{
+    display: flex;
+    justify-content: space-evenly;
+}
+.buttonscd{
+    display: flex;
+    justify-content: space-evenly;
+}
+/*hover for buttons*/
+#a:hover{
+    background-color: #f0deff;
+}
+#b:hover{
+    background-color: #c5cfe8;
+}
+#c:hover{
+    background-color: #bbfaea;
+}
+#d:hover{
+    background-color: #e8e0c5;
+}
+
+/*text styling*/
+.question_choice{
+    text-align: center;
 }
