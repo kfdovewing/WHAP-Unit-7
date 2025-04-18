@@ -3,16 +3,29 @@
     <head>
         <title>WHAP UNIT 7</title>
         <link rel="stylesheet" href="style.css">
-        <script src="main.js"></script>
     </head>
     <body>
         <h1 id = "header">WHAP UNIT 7</h1>
-        <p id="question">question</p>
-        <form class="user_input">
-            <label for="user_ans">Enter your answer:</label>
-            <input type = "text" id="input"><br><br>
-            <input type = "submit" value = "Submit" id = "submit">
-        </form>
+        <div class = "question_choice">
+            <h2 id="question_text">Evaluate this question</h2>
+            <h3 id = "ans_a">A: answer a</h3>
+            <h3 id = "ans_b">B: answer b</h3>
+            <h3 id = "ans_c">C: answer c</h3>
+            <h3 id = "ans_d">D: answer d</h3>
+        </div>
+
+        <div class = "buttonsab">
+            <button id="a"><span id="ans_a">a</span></button>
+            <button id="b"><span id="ans_b">b</span></button>
+        </div>
+        <h1></h1>
+        <h1></h1>
+        <div class= "buttonscd">
+            <button id="c"><span id="ans_c">c</span></button>
+            <button id="d"><span id="ans_d">d</span></button>
+        </div>
+
+        <script src="./main.js"></script>
     </body>
 </html>
 
