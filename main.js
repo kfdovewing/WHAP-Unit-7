@@ -1,4 +1,3 @@
-//like what was i meant to do? ;P
 let quindex = 0;
 let count = 0
 const letters =["a", "b", "c", "d"];
@@ -37,6 +36,7 @@ const button_c = document.getElementById("c")
 const button_d = document.getElementById("d")
 
 function load_questions(index){
+    has_answered = false;
     const q = questions[index];
     let question_html = document.getElementById("question_text");
     question_html.innerHTML = questions[index].question;
@@ -46,10 +46,12 @@ function load_questions(index){
     document.getElementById("ans_d").innerHTML = questions[index].answers[3].item;
     click(q)
 }
-
+let has_answered = false;
 function click(question){
     [button_a, button_b, button_c, button_d].forEach((btn, i)=>{
         btn.onclick = () => {
+            if (has_answered) return;
+            has_answered = true;
             const is_correct = question.answers[i].correct;
             const answerSpan = btn.querySelector("span");
             answerSpan.innerHTML = is_correct ? "CORRECT" : "INCORRECT";
@@ -61,10 +63,10 @@ function click(question){
                 reset_btns()
                 quindex++
                 if (quindex >= questions.length){
-                    alert("Quiz done. The page will reload in 3 seconds after you click ok. You got " + String(count) + "/" + String(questions.length));
+                    alert("Quiz done. The page will reload in 1 second after you click ok. You got " + String(count) + "/" + String(questions.length));
                     setTimeout (() =>{
                         location.reload()
-                    }, 3000);
+                    }, 500);
                 }else{
                     load_questions(quindex);
                 }
