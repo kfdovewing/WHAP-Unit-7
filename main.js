@@ -3,12 +3,12 @@ let count = 0
 const letters =["a", "b", "c", "d"];
 const questions = [
     {
-        question: "Who was the general who forced Japan open?",
+        question: "What was not a factor that led to the decline of the Qing Dyansty?",
         answers: [
-            {item: "A: Adolf Hitler", correct: false},
-            {item: "B: Matthew Perry", correct: true},
-            {item: "C: Franklin Roosevelt", correct: false},
-            {item: "D: Ulysses S. Grant", correct: false},
+            {item: "A: Overspending", correct: false},
+            {item: "B: Natural disasters", correct: true},
+            {item: "C: Internal conflicts and revolutions", correct: false},
+            {item: "D: External conflicts and overextension of resources", correct: false},
         ]
     },
     {
