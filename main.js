@@ -5,10 +5,10 @@ const questions = [
     {
         question: "Who was the general who forced Japan open?",
         answers: [
-            {item: "A: Hitler", correct: false},
-            {item: "B: Perry", correct: true},
-            {item: "C: Mussolini", correct: false},
-            {item: "D: Stalin", correct: false},
+            {item: "A: Adolf Hitler", correct: false},
+            {item: "B: Matthew Perry", correct: true},
+            {item: "C: Franklin Roosevelt", correct: false},
+            {item: "D: Ulysses S. Grant", correct: false},
         ]
     },
     {
@@ -16,19 +16,92 @@ const questions = [
         answers:[
             {item: "A: Hitler's plan to conquer Europe quickly", correct: true},
             {item: "B: Stalin's plan to fix Russia's economy", correct: false},
-            {item: "C: Mussolini's plan to get rid of Lasseiz Faire", correct: false},
+            {item: "C: Mussolini's plan to get rid of Lasseiz Faire economics", correct: false},
             {item: "D: The Ottomans' plan to get rid of religious tolerance", correct: false},
         ]
     },
     {
-        question:"What type of mustache did Hitler have?",
-        answers: [
-            {item: "A: handlebar", correct: false},
-            {item: "B: pencil", correct: false},
-            {item: "C: toothbrush", correct: true},
-            {item: "D: horseshoe", correct: false},
+        question: "What was not a factor that led to the collapse of the Ottoman Empire?",
+        answers:[
+            {item: "A: The decline of land trade", correct: false},
+            {item: "B: Internal conflict", correct: false},
+            {item: "C: Balkan nationalism", correct: false},
+            {item: "D: Imperialism by European powers", correct: true},
         ]
-    }
+    },
+    {
+        question: "What was a not a cause of world war I?",
+        answers:[
+            {item: "A: Alliances", correct: false},
+            {item: "B: Imperialism", correct: false},
+            {item: "C: Isolationism", correct: true},
+            {item: "D: Nationalism", correct: false},
+        ]
+    },
+    {
+        question: "What was a method that the government used to initiate total war during World War I?",
+        answers:[
+            {item: "A: Propaganda", correct: true},
+            {item: "B: Imperialism", correct: false},
+            {item: "C: Bribes and monetary rewards", correct: false},
+            {item: "D: Threats of military occupation", correct: false},
+        ]
+    },
+    {
+        question: "What was total war?",
+        answers:[
+            {item: "A: When everyone in the country, soldiers and families, are devoted to the war cause", correct: true},
+            {item: "B: When the whole world, including European colonies, are involved in the war.", correct: false},
+            {item: "C: When the whole world, including European colonies, are developing weapons", correct: false},
+            {item: "D: The devotion of the entire economy of a country to developing weapons and nuclear technology", correct: false},
+        ]
+    },
+    {
+        question: "What was not a term of the Treaty of Versailles?",
+        answers:[
+            {item: "A: The Rhineland is given to the Allies", correct: false},
+            {item: "B: France gets to rule Germany directly", correct: true},
+            {item: "C: Germany has to pay France heavy reparations", correct: false},
+            {item: "D: The entire war was Germany's fault", correct: false},
+        ]
+    },
+    {
+        question: "How did the New Deal intervene in the US economy?",
+        answers:[
+            {item: "A: The government paid all of the US's debts", correct: false},
+            {item: "B: More jobs were offered by the government", correct: true},
+            {item: "C: More weapons were made and sold", correct: false},
+            {item: "D: The United States became fascist.", correct: false},
+        ]
+    },
+    {
+        question: "What was not a cause of WWII?",
+        answers:[
+            {item: "A: Hitler's expansion and blitzkrieg", correct: false},
+            {item: "B: Japanese invasion of China", correct: false},
+            {item: "C: The harsh terms of the Treaty of Versailles", correct: false},
+            {item: "D: The success of appeasement methods", correct: true},
+        ]
+    },
+    {
+        question: "What was not a method that the US used to mobilize for war?",
+        answers:[
+            {item: "A: Anti-communism propaganda", correct: false},
+            {item: "B: Pacific Island Hopping", correct: false},
+            {item: "C: Allying with the Axis powers", correct: true},
+            {item: "D: Selling weapons through the lend-lease program", correct: false},
+        ]
+    },
+    {
+        question: "How did World War II end?",
+        answers:[
+            {item: "A: German surrender and atomic bombs in Japan", correct: true},
+            {item: "B: Internal conflicts in European nations, and revolutions", correct: false},
+            {item: "C: The Treaty of Versailles and its negotiation", correct: false},
+            {item: "D: The complete destruction of Germany by the Allied powers", correct: false},
+        ]
+    },
+    
 ];
 const button_a = document.getElementById("a")
 const button_b = document.getElementById("b")
